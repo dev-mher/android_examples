@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+    <!--<include-->
+        <!--android:id="@+id/customBar"-->
+        <!--layout="@layout/custom_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="top"-->
+        <!--/>-->
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/fragment_margin">
+
+        <ImageView
+            android:id="@+id/video_image"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="0.6"
+            />
+
+        <TextView
+            android:id="@+id/video_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.4"
+            android:text="ttt"
+            android:textSize="@android:dimen/app_icon_size"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/detailed_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/liner"
+        android:layout_weight="0.9"
+        android:paddingLeft="@dimen/fragment_margin"
+        android:textSize="@dimen/abc_dialog_padding_material"
+        />
+
+</RelativeLayout>
